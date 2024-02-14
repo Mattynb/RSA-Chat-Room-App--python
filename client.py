@@ -10,7 +10,7 @@ class Client:
         self.name = name
     
         # rsa setup
-        self.n, self.e, self.d = rsa.keygen(124)
+        self.n, self.e, self.d = rsa.keygen(2048)
         
         # connect to server
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
